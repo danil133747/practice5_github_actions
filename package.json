@@ -1,0 +1,11 @@
+{
+  "name": "practice5-github-actions",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Basic Node.js project for GitHub Actions CI practical work",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "node -e \"const fs=require('fs'); fs.mkdirSync('dist',{recursive:true}); fs.copyFileSync('index.js','dist/index.js'); console.log('Build completed successfully');\""
+  }
+}
